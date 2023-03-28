@@ -1,7 +1,8 @@
 pipeline {
     agent any
         tools {
-            nodejs '19.8.1'
+            nodejs '19.8.1',
+            python 'Python3.8.12'
         }
     stages {
         stage('build') {
