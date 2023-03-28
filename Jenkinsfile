@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm version'
-                sh 'cd frontend && npm i'
+                sh 'npm i'
                 sh 'npm run build'
                 sh 'ls'
             }
